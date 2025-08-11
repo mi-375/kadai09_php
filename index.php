@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
 
+
+<body>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,18 +13,6 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-<head>
-
-
-
-
-
-    <meta charset="utf-8">
-    <title>にっこり記録
-    </title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
 
     <!-- 装飾要素 -->
     <div class="decoration"></div>

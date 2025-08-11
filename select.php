@@ -1,11 +1,12 @@
 <?php
 session_start();
-
-// funcs.phpを呼び出す
 require_once('funcs.php');
+loginCheck(); // ログイン確認
+// funcs.phpを呼び出す
+
 
 //1.  DBに接続
-require_once('funcs.php');
+// require_once('funcs.php');
 $pdo= db_conn();
   
 
@@ -33,9 +34,8 @@ if ($status == false) {
 
     $view .= '<div class="record-actions">';
 
-        $view .= '<a href="detail.php?id=' . $r["id"] . '" class="link-button">編集</a>';
-        $view .= '<a href="delete.php?id=' . $r['id'] . '" class="link-button" onclick="return confirm(\'本当に削除しますか？\');">削除</a>';
-
+    $view .= '<a href="detail.php?id=' . $result["id"] . '" class="link-button">編集</a>';
+    $view .= '<a href="delete.php?id=' . $result['id'] . '" class="link-button" onclick="return confirm(\'本当に削除しますか？\');">削除</a>';
     $view .= '</div>';
       
     }
